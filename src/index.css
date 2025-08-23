@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Modern Portfolio Design System - Dark Futuristic Theme with Neon Accents
+All colors MUST be HSL for proper theming.
+*/
+
+@layer base {
+  :root {
+    /* Dark futuristic theme */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+
+    /* Glass cards with transparency */
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Neon primary - electric blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 3%;
+    --primary-glow: 217 91% 70%;
+
+    /* Secondary - muted purple */
+    --secondary: 270 60% 20%;
+    --secondary-foreground: 210 40% 98%;
+
+    /* Muted dark surfaces */
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
+
+    /* Accent - neon purple */
+    --accent: 270 100% 70%;
+    --accent-foreground: 222 47% 3%;
+    --accent-glow: 270 100% 80%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 222 47% 15%;
+    --input: 222 47% 12%;
+    --ring: 217 91% 60%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--background)), hsl(222 47% 8%));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card) / 0.8), hsl(var(--muted) / 0.4));
+    
+    /* Glass effects */
+    --glass-bg: hsl(var(--card) / 0.1);
+    --glass-border: hsl(var(--border) / 0.2);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.3);
+    --shadow-card: 0 8px 32px hsl(222 47% 2% / 0.5);
+    --shadow-accent: 0 0 20px hsl(var(--accent) / 0.4);
+
+    /* Animation durations */
+    --duration-fast: 0.2s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.5s;
+    
+    /* Transitions and animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Sidebar (keeping for compatibility) */
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 3%;
+    --sidebar-accent: 270 100% 70%;
+    --sidebar-accent-foreground: 222 47% 3%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+
+  .dark {
+    /* Keep same color scheme for consistent dark theme */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 3%;
+    --primary-glow: 217 91% 70%;
+    --secondary: 270 60% 20%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 222 47% 12%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 270 100% 70%;
+    --accent-foreground: 222 47% 3%;
+    --accent-glow: 270 100% 80%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 222 47% 15%;
+    --input: 222 47% 12%;
+    --ring: 217 91% 60%;
+    --sidebar-background: 222 47% 8%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 3%;
+    --sidebar-accent: 270 100% 70%;
+    --sidebar-accent-foreground: 222 47% 3%;
+    --sidebar-border: 222 47% 15%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
