@@ -23,7 +23,7 @@ const Index = () => {
       <footer className="bg-card/50 backdrop-blur-sm border-t border-border/50 py-8">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Anubhav Goon. Crafted with ❤️ and lots of coffee.
+            © 2025 Anubhav Goon.
           </p>
         </div>
       </footer>
