@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-const profileImage = "/lovable-uploads/9a695d61-c262-4562-b9d1-bb664ac27313.png";
+const profileImage = "/anubhav-uploads/9a695d61-c262-4562-b9d1-bb664ac27313.png";
 import { ArrowDown, Code, Database, Palette } from "lucide-react";
 
 export const Hero = () => {
